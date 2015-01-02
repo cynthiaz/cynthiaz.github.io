@@ -1,0 +1,10 @@
+
+<svg class="iconhover" width="27px" height="20px" viewBox="0 0 27 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<link rel="stylesheet" href="iconstyle.css" type="text/css"/>
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <path class="iconhover" d="M25.0327059,16.8596078 L18.0296471,10.0162092 L25.0327059,3.17281046 L25.0327059,16.8585621 L25.0327059,16.8596078 Z M3.16164706,18.1584314 L10.1774118,11.3223529 L10.4770588,11.6026144 C12.1341176,13.145098 14.7663529,13.145098 16.3524706,11.6026144 L16.6542353,11.3098039 L23.7028235,18.1584314 L3.16270588,18.1584314 L3.16164706,18.1584314 Z M1.90270588,3.17281046 L8.89517647,10.0162092 L1.89,16.8596078 L1.90270588,3.17385621 L1.90270588,3.17281046 Z M23.6890588,1.86771242 L15.0744706,10.2713725 C14.1988235,11.1320261 12.6328235,11.1132026 11.7317647,10.2379085 L3.17541176,1.86771242 L23.6901176,1.86771242 L23.6890588,1.86771242 Z M0,9.28814034e-16 L0,20 L27,20 L27,0 L0,0 L0,9.28814034e-16 Z" id="Shape" fill="#505050" sketch:type="MSShapeGroup"></path>
+    </g>
+</svg>
