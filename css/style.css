@@ -177,8 +177,12 @@ nav a:hover {
 /* portfolio section */
 
 #work {
-	margin-top: 3em;
 	margin-bottom: 4em;
+}
+
+#work h1{
+	padding-top: 2em;
+	margin-top: 0;
 }
 
 
