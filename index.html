@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8" />
 	<title>Cynthia Zhang</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<!--Custom fonts. To improve load times, remove this and update the h1 styling in style.css--> 
-	<link href='http://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,700,100' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
+	<meta name="description" content="Cynthia Zhang - User experience design, interface design, product design. " />
+	<meta name="keywords" content="Cynthia Zhang, UX designer, UI designer, product design" />
 	<!-- stylesheets -->
-	<link rel="stylesheet" href="style.css" type="text/css" />
-	<!-- favicon -->
-	<link rel="shortcut icon" href="img/favicon.ico">
-	<!-- social icons -->
-	
-	<!-- just in case viewer is using Internet Explorer -->
-	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/grid.css">
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
+	<!-- script -->
+	<script src="js/jquery.scrolly.min.js"></script>
+	<script src="js/jquery.scrollgress.min.js"></script>
 </head>
-
 <body>
-	
-	<!-- Header-->
+	<!-- Header navigation -->
 	<header>
-		<img class="avatar" src="img/avatar.jpg" alt="Cynthia Zhang Profile Picture">
-		<h1>CYNTHIA ZHANG</h1>
-		<p>UX/UI DESIGNER</p>
+		<h1 id="logo"><a href="index.html">CYNTHIA ZHANG</a></h1>
+		<nav>
+			<ul>
+				<li><a href="#">ABOUT</a></li>
+				<li><a href="#work">WORK</a></li>
+				<li><a href="#resume">CV</a></li>
+				<li><a href="#contact">CONTACT</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- Banner Section -->
+	<section id="about" class="textcenter">
+		<h1>Hey. I'm Cynthia.</h1>
+		<p>I'm a UX/UI designer at IBM Toronto Design Studio.<br>This is my playground. Feel free to connect with me.</p>
 		<div class="icons">
 			<a href="https://www.linkedin.com/in/cynzhang" target="_blank"><svg class="glyph" width="28px" height="26px" viewBox="0 0 28 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
 			    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-			        <g id="linkedin" sketch:type="MSLayerGroup" fill="#505050">
+			        <g id="linkedin" sketch:type="MSLayerGroup" fill="#4A4A4A">
 			            <path d="M10,8 L15.535,8 L15.535,10.837 L15.614,10.837 C16.384,9.456 18.269,8 21.078,8 C26.92,8 28,11.637 28,16.367 L28,26 L22.231,26 L22.231,17.46 C22.231,15.423 22.189,12.803 19.23,12.803 C16.225,12.803 15.767,15.021 15.767,17.312 L15.767,26 L10,26 L10,8 L10,8 Z" id="Shape" sketch:type="MSShapeGroup"></path>
 			            <path d="M0,8 L6,8 L6,26 L0,26 L0,8 L0,8 Z" id="Shape" sketch:type="MSShapeGroup"></path>
 			            <path d="M6,3 C6,4.657 4.657,6 3,6 C1.343,6 0,4.657 0,3 C0,1.343 1.343,0 3,0 C4.657,0 6,1.343 6,3 L6,3 Z" id="Shape" sketch:type="MSShapeGroup"></path>
@@ -38,204 +44,105 @@
 			</svg></a>
 			<a href="https://twitter.com/cynzhang" target="_blank"><svg class="glyph" width="32px" height="26px" viewBox="0 0 32 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
 			    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-			        <path d="M32.001,3.078 C30.824,3.6 29.558,3.953 28.23,4.112 C29.585,3.299 30.626,2.013 31.117,0.48 C29.848,1.232 28.443,1.779 26.948,2.073 C25.75,0.797 24.044,1.77635684e-15 22.156,1.77635684e-15 C18.53,1.77635684e-15 15.591,2.939 15.591,6.565 C15.591,7.08 15.649,7.581 15.761,8.061 C10.305,7.787 5.467,5.173 2.229,1.201 C1.664,2.171 1.34,3.298 1.34,4.502 C1.34,6.78 2.499,8.789 4.261,9.967 C3.185,9.933 2.173,9.638 1.287,9.146 C1.286,9.173 1.286,9.201 1.286,9.229 C1.286,12.41 3.549,15.063 6.552,15.666 C6.001,15.816 5.421,15.896 4.822,15.896 C4.399,15.896 3.988,15.855 3.587,15.778 C4.422,18.386 6.847,20.284 9.72,20.337 C7.473,22.098 4.642,23.147 1.566,23.147 C1.036,23.147 0.514,23.116 0,23.055 C2.905,24.918 6.356,26.005 10.064,26.005 C22.14,26.005 28.743,16.001 28.743,7.325 C28.743,7.04 28.737,6.757 28.724,6.476 C30.007,5.55 31.12,4.394 32,3.078 L32.001,3.078 Z" id="Shape" fill="#505050" sketch:type="MSShapeGroup"></path>
+			        <path d="M32.001,3.078 C30.824,3.6 29.558,3.953 28.23,4.112 C29.585,3.299 30.626,2.013 31.117,0.48 C29.848,1.232 28.443,1.779 26.948,2.073 C25.75,0.797 24.044,1.77635684e-15 22.156,1.77635684e-15 C18.53,1.77635684e-15 15.591,2.939 15.591,6.565 C15.591,7.08 15.649,7.581 15.761,8.061 C10.305,7.787 5.467,5.173 2.229,1.201 C1.664,2.171 1.34,3.298 1.34,4.502 C1.34,6.78 2.499,8.789 4.261,9.967 C3.185,9.933 2.173,9.638 1.287,9.146 C1.286,9.173 1.286,9.201 1.286,9.229 C1.286,12.41 3.549,15.063 6.552,15.666 C6.001,15.816 5.421,15.896 4.822,15.896 C4.399,15.896 3.988,15.855 3.587,15.778 C4.422,18.386 6.847,20.284 9.72,20.337 C7.473,22.098 4.642,23.147 1.566,23.147 C1.036,23.147 0.514,23.116 0,23.055 C2.905,24.918 6.356,26.005 10.064,26.005 C22.14,26.005 28.743,16.001 28.743,7.325 C28.743,7.04 28.737,6.757 28.724,6.476 C30.007,5.55 31.12,4.394 32,3.078 L32.001,3.078 Z" id="Shape" fill="#4A4A4A" sketch:type="MSShapeGroup"></path>
 			    </g>
 			</svg></a>
 			<a href="#contact"><svg class="glyph" width="27px" height="20px" viewBox="0 0 27 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
   				 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        			<path d="M25.0327059,16.8596078 L18.0296471,10.0162092 L25.0327059,3.17281046 L25.0327059,16.8585621 L25.0327059,16.8596078 Z M3.16164706,18.1584314 L10.1774118,11.3223529 L10.4770588,11.6026144 C12.1341176,13.145098 14.7663529,13.145098 16.3524706,11.6026144 L16.6542353,11.3098039 L23.7028235,18.1584314 L3.16270588,18.1584314 L3.16164706,18.1584314 Z M1.90270588,3.17281046 L8.89517647,10.0162092 L1.89,16.8596078 L1.90270588,3.17385621 L1.90270588,3.17281046 Z M23.6890588,1.86771242 L15.0744706,10.2713725 C14.1988235,11.1320261 12.6328235,11.1132026 11.7317647,10.2379085 L3.17541176,1.86771242 L23.6901176,1.86771242 L23.6890588,1.86771242 Z M0,9.28814034e-16 L0,20 L27,20 L27,0 L0,0 L0,9.28814034e-16 Z" id="Shape" fill="#505050" sketch:type="MSShapeGroup"></path>
+        			<path d="M25.0327059,16.8596078 L18.0296471,10.0162092 L25.0327059,3.17281046 L25.0327059,16.8585621 L25.0327059,16.8596078 Z M3.16164706,18.1584314 L10.1774118,11.3223529 L10.4770588,11.6026144 C12.1341176,13.145098 14.7663529,13.145098 16.3524706,11.6026144 L16.6542353,11.3098039 L23.7028235,18.1584314 L3.16270588,18.1584314 L3.16164706,18.1584314 Z M1.90270588,3.17281046 L8.89517647,10.0162092 L1.89,16.8596078 L1.90270588,3.17385621 L1.90270588,3.17281046 Z M23.6890588,1.86771242 L15.0744706,10.2713725 C14.1988235,11.1320261 12.6328235,11.1132026 11.7317647,10.2379085 L3.17541176,1.86771242 L23.6901176,1.86771242 L23.6890588,1.86771242 Z M0,9.28814034e-16 L0,20 L27,20 L27,0 L0,0 L0,9.28814034e-16 Z" id="Shape" fill="#4A4A4A" sketch:type="MSShapeGroup"></path>
     			</g>
 			</svg></a>
 		</div>
-		<nav>
-			<ul class="test">
-				<li><a href="#about">ABOUT</a></li>
-				<li><a href="#work">   WORK</a></li>
-				<li><a href="#resume">EXPERIENCE</a></li>
-			</ul>
-		</nav>
-	</header>
-	
-	<div class="container">
-		
-		<!-- Introduction-->
-		<section class="center" id="about">
-			<h1>ABOUT ME</h1>
-			<p>
-				Hello! I am a UX designer at the IBM Toronto design studio. I studied Industrial Designe with a minor in Psychology at Carleton University. I believe design isn't just about good ideas. It's a process of problem solving, to observe, to think and to develop; learning the why and learning to foresee.
-			</p>
-			<p id="toolkit">Toolkit: Photoshop / Illustrator / Sketch / Axure / Fireworks / Balsamiq</p>
-			<p id="specialities">Specialities: UI Mockups / Interaction Flow / Rapid-prototyping / Usability Testing / HTML &#38; CSS</p>
-			<p id="hobbies">Hobbies: Travel / Table-tennis / Break friends' mobile game record</p>
-
-		</section>
-		
-		<hr>
-		
-		<!-- Gallery Block-->
-		<section class="gallery" id="work">
-			<h1 class="center">WORK</h1>
-			<div class="row">
-				<a href="#"><img src="img/re.png" class="grid-2"></a>
-				<a href="#"><img src="img/re.png" class="grid-2"></a>
-				<a href="#"><img src="img/re.png" class="grid-2"></a>
-				<a href="#"><img src="img/re.png" class="grid-2"></a>
-				<a href="#"><img src="img/re.png" class="grid-2"></a>
-				<a href="#"><img src="img/re.png" class="grid-2"></a>
-			</div>
-		</section>
-		
-		<hr>
-		
-		<!-- Testimonials-->	
-		<section class="testimonial">
-			<div class="row">
-				<div class="grid-2">
-					<img src="img/re.png">
-					<h2>Their Name</h2>
-					<p>You can use this as a place to put recommendations, accolades and testimonials</p>
-				</div>
-				
-				<div class="grid-2">
-					<img src="img/re.png">
-					<h2>Their Name</h2>
-					<p>You can use this as a place to put recommendations, accolades and testimonials</p>
-				</div>
-		
-				<div class="grid-2">
-					<img src="img/re.png">
-					<h2>Their Name</h2>
-					<p>You can use this as a place to put recommendations, accolades and testimonials</p>
-				</div>
-			</div>
-		</section>
-	</div> <!-- End container-->
-	
-	<!-- Spotlight -->
-	<section class="spotlight">
-		<div class="container">
-			<div class="row">
-				<div class="grid-3">
-					<img src="img/spotlight.jpg">
-				</div>
-				<div class="grid-3">
-					<h1>Project Spotlight</h1>
-					<p>Give a brief description of what this project is and what role you played. It can also be helpful to include a link</p>
-					<a href="#">View Project</a>
-				</div>
-			</div>
-		</div>
 	</section>
 	
-	
-	<!-- Resume section-->
-	<div class="container" id="resume">
-		<h1 class="center">EXPERIENCE</h1>
-		<section class="education">	
-			<h3>Bachelor of Industrial Design, minor in Psychology <br> Carleton University</h2>
-		</section>
-		
-		<hr>
-			
-		<!--Experience Tables-->
-		<section class="experience">
-			<div class="row">
-				<div class="grid-2">
-					<h2>IBM</h2>
-					<p>08. 2012 - Present</p>
-				</div>
-				<div class="grid-4">
-					<h2 class="title">UX/UI Designer</h2>
-					<ul>
-						<li>Visualize the user scenarios with wireframes and create storyboards to validate the task flow</li>
-						<li>Produce low-fidelity to high-fidelity prototypes for design playbacks and implementation</li>
-						<li>Provide UI guidelines to enhance consistency across all tools</li>
-						<li>Redefine UI styles and patterns for Rational products and formulate the design strategy with the development</li>
-						<li>Run usability tests with customers to validate designs</li>
-					</ul>
-				</div>
+	<!-- Portfolio Section -->
+	<section id="work" class="textcenter container">
+		<h1 class="sectiontitle">WORK.</h1>
+		<hr class="highlight">
+		<div class="row">
+				<a href="#"><img src="img/pic01.jpg" class="grid-2"></a>
+				<a href="#"><img src="img/pic02.jpg" class="grid-2"></a>
+				<a href="#"><img src="img/pic03.jpg" class="grid-2"></a>
+				<a href="#"><img src="img/pic04.jpg" class="grid-2"></a>
+				<a href="#"><img src="img/pic05.jpg" class="grid-2"></a>
+				<a href="#"><img src="img/pic06.jpg" class="grid-2"></a>
 			</div>
-			<div class="row">
-				<div class="grid-2">
-					<h2>TUROLIGHT</h2>
-					<p>06. 2012 - 07. 2012</p>
+	</section>
+
+	<!-- Resume Section -->
+	<section id="resume">
+		<div class="container">
+			<h1 class="sectiontitle textcenter">RESUME.</h1>
+			<hr class="highlight">
+			<!--Experience Tables-->
+			<section class="experience">
+				<div class="row">
+					<div class="grid-2">
+						<h2>IBM</h2>
+						<p>08. 2012 - Present</p>
+					</div>
+					<div class="grid-4">
+						<h2 class="title">UX/UI Designer</h2>
+						<ul>
+							<li>Visualize the user scenarios with wireframes and create storyboards to validate the task flow</li>
+							<li>Produce low-fidelity to high-fidelity prototypes for design playbacks and implementation</li>
+							<li>Provide UI guidelines to enhance consistency across all tools</li>
+							<li>Redefine UI styles and patterns for Rational products and formulate the design strategy with the development</li>
+							<li>Run usability tests with customers to validate designs</li>
+						</ul>
+					</div>
 				</div>
-				<div class="grid-4">
-					<h2 class="title">Graphic Design Intern</h2>
-					<ul>
-						<li>Designed standardized packagings for a new product line</li>
-						<li>Created product sell sheets, promotional materials and product specification sheets</li>
-						<li>Enhanced the design of the company's website, including graphics for online catalogs, product icons and photography</li>
-					</ul>
+				<div class="row">
+					<div class="grid-2">
+						<h2>TUROLIGHT</h2>
+						<p>06. 2012 - 07. 2012</p>
+					</div>
+					<div class="grid-4">
+						<h2 class="title">Graphic Design Intern</h2>
+						<ul>
+							<li>Designed standardized packagings for a new product line</li>
+							<li>Created product sell sheets, promotional materials and product specification sheets</li>
+							<li>Enhanced the design of the company's website, including graphics for online catalogs, product icons and photography</li>
+						</ul>
+					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="grid-2">
-					<h2>CHINNO DESIGN</h2>
-					<p>06. 2011 - 10. 2011</p>
+				<div class="row">
+					<div class="grid-2">
+						<h2>CHINNO DESIGN</h2>
+						<p>06. 2011 - 10. 2011</p>
+					</div>
+					<div class="grid-4">
+						<h2 class="title">Industrial Design Intern</h2>
+						<ul>
+							<li>Work closely with the engineers, clients and sales on the development of innovative home appliances</li>
+							<li>Collaborated with the design team on all aspect of the design process, including planning, market research, ideation and 3D modelling</li>
+							<li>Consulted clients on design requirements and investigated in materials and production processes</li>
+						</ul>
+					</div>
 				</div>
-				<div class="grid-4">
-					<h2 class="title">Industrial Design Intern</h2>
-					<ul>
-						<li>Work closely with the engineers, clients and sales on the development of innovative home appliances</li>
-						<li>Collaborated with the design team on all aspect of the design process, including planning, market research, ideation and 3D modelling</li>
-						<li>Consulted clients on design requirements and investigated in materials and production processes</li>
-					</ul>
-				</div>
-			</div>
-		</section>
-		
-		<hr>
-		
-		<!--List of skills 
-		<section>
-			<div class="row">
-				<div class="grid-2">
-					<h1>Skills</h1>
-					<ul>
-						<li>HTML</li>
-						<li>CSS</li>
-						<li>Javascript</li>
-						<li>Angular.js</li>
-						<li>Photoshop</li>
-						<li>Git</li>
-					</ul>
-				</div>
-				
-				<div class="grid-4">
-					<h1>In Conclusion</h1>
-					<p>
-						This is a good spot to highlight experiance and skills. Make sure to include a call to action like a link to your website, or your email address.
-						If you find bugs, want features, or have questions, feel free to submit an <a href="https://github.com/philipcdavis/responsive-resume/issues">issue</a>. You are free to use without attribution.
-						If you're ok sharing, I would love seeing what you make! Shoot me an
-						<a href="mailto:Phillysoul11@gmail.com?Subject=Responsive%20Resume" target="_top">email</a> or
-						<a href="http://www.twitter.com/philipcdavis">tweet</a> at me.
-					</p>
-				</div>
-			</div>
-		</section> -->
-	</div>
-	
-	<!-- contact form section -->
-	<div class="center" id="contact">
-		<h1>GET IN TOUCH</h1>
-		<p>april.cyan@gmail.com </p>
-		<div class="contactform">
-		<form method="post" action="#">
-			<input type="text" class="text" name="name" placeholder="Name" />
-			<input type="text" class="text" name="email" placeholder="Email" />
-			<textarea name="message" placeholder="Message"></textarea>
-			<a href="#" class="button submit">Send Email</a>
-		</form>
+			</section>
 		</div>
-	</div>
-	<!-- End Container -->
-		
-	<!--Footer-->
+	</section>
+
+	<!-- contact form section -->
+	<section id="contact">
+		<h1 class="sectiontitle textcenter">GET IN TOUCH.</h1>
+		<hr class="highlight">
+		<p class="textcenter">april.cyan@gmail.com </p>
+		<div class="contactform container">
+			<form method="post" action="#">
+				<input type="text" class="text" name="name" placeholder="Name" />
+				<input type="text" class="text" name="email" placeholder="Email" />
+				<textarea name="message" placeholder="Message"></textarea>
+				<a href="#" class="button submit">Send Email</a>
+			</form>
+		</div>
+	</section>
+
+	<!--Footer section-->
 	<footer class="center">
-			<span>&copy; CYNTHIA ZHANG 2014</span>
-		</footer>
-		
+			<span>&copy; DESIGNED BY CYNTHIA ZHANG 2014</span>
+	</footer>
 	
 </body>
 </html>
