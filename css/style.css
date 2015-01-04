@@ -5,7 +5,7 @@
 
 a {
 	text-decoration: none;
-	color: #323232;
+	color: #4A4A4A;
 }
 
 li {
@@ -24,7 +24,7 @@ li {
 .highlight {
 	width: 3em;
 	height: 0.3em;
-	background-color: #FFA766;
+	background-color: #DE5B49;
 }
 
 
@@ -55,7 +55,7 @@ header h1{
 }
 
 #logo a:hover{
-	color: #FFA766;
+	color: #DE5B49;
 }
 
 header nav {
@@ -111,7 +111,7 @@ nav a:hover {
 /* Banner Section */
 
 #about{
-	background-color: #FFA766;
+	background-color: #DE5B49;
 	background-size: auto;
 	padding-bottom: 3.5em;
 	padding-top: 2.5em;
@@ -120,7 +120,7 @@ nav a:hover {
 
 #about h1{
 	font-family: 'Oswald' sans-serif;
-	font-weight: 400;
+	font-weight: 700;
 	font-size: 3em;
 	color: white;
 	width: 90%;
@@ -145,7 +145,7 @@ nav a:hover {
 }
 
 .glyph:hover path{
-  fill: rgba(255, 255, 255, 0.6);
+  fill: #504E59;
 }
 
 #twitter {
@@ -189,12 +189,22 @@ nav a:hover {
 /* Resume section */
 
 #resume {
-	background: #F5F5F5;
+	background: #F1F1F1;
 	font-family: 'Lato', sans-serif;
 }
 
 #resume h1{
 	padding-top: 2em;
+	margin-bottom: 0.3em;
+}
+
+#resume a {
+	display: block;
+	text-align: center;
+}
+
+#resume .glyph:hover path {
+	fill: rgba(0, 0, 0, 0.3);
 }
 
 .experience {
@@ -303,7 +313,7 @@ nav a:hover {
       {
         margin-top: 0.5em;
         margin-bottom: 3em;
-        background: #505050;
+        background: #6DADAD;
         letter-spacing: 0.05em;
         font-size: 1.3em;
       }
@@ -317,7 +327,7 @@ nav a:hover {
         display: block;
         border: 0;
         background: #fff;
-        background: rgba(0, 0, 0, .02);
+        background: rgba(0, 0, 0, 0.02);
         width: 100%;
         border-radius: 0.20em;
         margin: 1em 0em;
@@ -344,8 +354,8 @@ nav a:hover {
         form select:focus,
         form textarea:focus
         {
-          border: solid 1px #FFA766;
-          box-shadow: 0 0 1px 1px rgba(248, 171, 99, 0.3);
+          border: solid 1px #6DADAD;
+          box-shadow: 0 0 1px 1px rgba(109, 173, 173, 0.3);
         }
         
         form textarea
@@ -384,7 +394,7 @@ nav a:hover {
         }
 
         form .submit:hover {
-          background: #FFA766;
+          background: #DE5B49;
         }
 
   /* Button style */
@@ -402,7 +412,7 @@ nav a:hover {
 
 footer {
 	padding: 2em 0.5em;
-	background: #4A4A4A;
+	background: #504E59;
 	color: white;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
