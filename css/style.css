@@ -1,4 +1,3 @@
-@import url("font-awesome.min.css");
 @import url("http://fonts.googleapis.com/css?family=Lato:300,400,900");
 
 /* BASIC */
@@ -14,7 +13,10 @@ li {
 
 .sectiontitle {
 	font-size: 1.8em;
+  font-family: 'Oswald', sans-serif;
 	font-weight: 300;
+  letter-spacing: 0.02em;
+  text-align: center;
 }
 .textcenter {
 	font-family: 'Oswald', sans-serif;
@@ -27,6 +29,9 @@ li {
 	background-color: #DE5B49;
 }
 
+p, h2, h1 {
+  color: #1A1A1A;
+}
 
 /* Header Section */
 
@@ -110,34 +115,40 @@ nav a:hover {
 
 /* Banner Section */
 
-#about{
+#banner{
+  height: auto;
+  max-width: 100%;
+}
+
+#intro{
 	background-color: #DE5B49;
 	background-size: auto;
-	padding-bottom: 3.5em;
-	padding-top: 2.5em;
-	margin-top: 5.8em;
+	padding-bottom: 2.5em;
+	padding-top: 1.2em;
+  margin-top: -0.4em;
 }
 
-#about h1{
-	font-family: 'Oswald', sans-serif;
+#intro h1{
+	font-family: 'Oswald' sans-serif;
 	font-weight: 700;
-	font-size: 3em;
+	font-size: 2em;
 	color: white;
 	width: 90%;
-	margin: 0.7em auto 0.5em auto;
+	margin: 0.5em auto 0.5em auto;
 }
 
-#about p{
+#intro p{
 	width: 60%;
-	font-family: 'Oswald', sans-serif;
-	font-size: 1.2em;
+	font-family: 'Oswald' sans-serif;
+  letter-spacing: 0.04em;
+	font-size: 1em;
 	font-weight: 300;
 	color: white;
 	margin: auto;
 }
 
 .icons {
-  margin: 3em 0 0 0;
+  margin: 2.5em 0 0 0;
 }
 
 .icons svg{
@@ -153,31 +164,87 @@ nav a:hover {
   height: 24px;
 }
 
+@media screen and (max-width: 50em) {
+  #banner {
+    margin-top: 4em;
+  }
+}
 @media screen and (min-width: 50em) {
-	#about{
+
+	#intro{
 		background-size: auto;
-		padding-bottom: 4em;
-		padding-top: 2.5em;
-		margin-top: 3.6em;
+		padding-bottom: 3.5em;
+		padding-top: 2em;
 	}
 
-	#about h1 {
+	#intro h1 {
 		font-size: 3.5em;
 	}
 
-	#about p{
+	#intro p{
 		font-size: 1.5em;
 	}
 
 	.icons {
-  		margin: 3.5em 0 0 0;
+  		margin: 3em 0 0 0;
 	}
 }
 
+/* About me Section */
+
+#about {
+  margin: auto;
+  height: 48em;
+  background-color: #F3F3F3;
+}
+
+#about h1{
+  padding-top: 2em;
+  margin-top: 0;
+}
+
+#about span{
+  display: block;
+  text-align: center;
+  margin: 2em auto;
+}
+
+#about img{
+  width: 8em;
+  height: auto;
+  margin: auto;
+}
+
+#about p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1em;
+  font-weight: 300;
+  width: 75%;
+  margin: auto;
+  line-height: 1.8em;
+}
+
+@media screen and (max-width: 50em) {
+  #about {
+    height: 48em;
+  }
+
+  #about p{
+    font-size: 1em;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 30em) {
+  #about {
+
+    height: 58em;
+  }
+}
 /* portfolio section */
 
 #work {
-	margin-bottom: 4em;
+	margin-bottom: 2em;
 }
 
 #work h1{
@@ -185,6 +252,11 @@ nav a:hover {
 	margin-top: 0;
 }
 
+@media screen and (min-width: 50em) {
+  #work h1{
+    padding-top: 2em;
+  }
+}
 
 /* Resume section */
 
@@ -403,7 +475,7 @@ nav a:hover {
 	    display: inline-block;
 	    padding: 0.5em 1.8em;
 	    font-weight: 300;
-	    font-family: 'Oswald', sans-serif;
+	    font-family: 'Oswald' sans-serif;
 	    color: #FFF;
 	}
 
