@@ -68,6 +68,7 @@ header nav {
 	display: block;
 	font-weight: 300;
 	font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.03em;
 	font-size: 1em;
 }
 
@@ -95,13 +96,13 @@ nav a:hover {
 	}
 
 	#logo {
-		margin-left: 0.3em;
+		margin-left: 16em;
 	}
 
 	header nav {
 		margin: 0;
 		position: absolute;
-		right: 1.5em;
+		right: 21em;
 		font-size: 1.02em;
 		top: 1.1em;
 	}
