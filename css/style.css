@@ -1,5 +1,169 @@
 @import url("http://fonts.googleapis.com/css?family=Lato:300,400,900");
 
+/* Foundation 5.5 css selective */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  
+html,
+body {
+  font-size: 100%; }
+
+body {
+  background: #fff;
+  color: #222;
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.7;
+  position: relative;
+  cursor: auto; }
+
+a:hover {
+  cursor: pointer; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+img {
+  -ms-interpolation-mode: bicubic; }
+
+img {
+  display: inline-block;
+  vertical-align: middle; }
+
+textarea {
+  height: auto;
+  min-height: 50px; }
+
+select {
+  width: 100%; }
+
+.row {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 62.5rem; }
+  .row:before, .row:after {
+    content: " ";
+    display: table; }
+  .row:after {
+    clear: both; }
+  .row.collapse > .column,
+  .row.collapse > .columns {
+    padding-left: 0;
+    padding-right: 0; }
+  .row.collapse .row {
+    margin-left: 0;
+    margin-right: 0; }
+  .row .row {
+    width: auto;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: none; }
+    .row .row:before, .row .row:after {
+      content: " ";
+      display: table; }
+    .row .row:after {
+      clear: both; }
+    .row .row.collapse {
+      width: auto;
+      margin: 0;
+      max-width: none; }
+      .row .row.collapse:before, .row .row.collapse:after {
+        content: " ";
+        display: table; }
+      .row .row.collapse:after {
+        clear: both; }
+
+.column,
+.columns {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  width: 100%;
+  float: left; }
+
+[class*="column"] + [class*="column"]:last-child {
+  float: right; }
+
+[class*="column"] + [class*="column"].end {
+  float: left; }
+
+@media only screen {
+
+  .column,
+  .columns {
+    position: relative;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    float: left; }
+}
+
+@media only screen and (min-width: 40.063em) {
+
+  .column,
+  .columns {
+    position: relative;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    float: left; }
+}
+
+@media only screen and (min-width: 64.063em) {
+  .column,
+  .columns {
+    position: relative;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    float: left; }
+
+  .large-1 {
+    width: 8.33333%; }
+
+  .large-2 {
+    width: 16.66667%; }
+
+  .large-3 {
+    width: 25%; }
+
+  .large-4 {
+    width: 33.33333%; }
+
+  .large-5 {
+    width: 41.66667%; }
+
+  .large-6 {
+    width: 50%; }
+
+  .large-7 {
+    width: 58.33333%; }
+
+  .large-8 {
+    width: 66.66667%; }
+
+  .large-9 {
+    width: 75%; }
+
+  .large-10 {
+    width: 83.33333%; }
+
+  .large-11 {
+    width: 91.66667%; }
+
+  .large-12 {
+    width: 100%; }
+
+}
+
 /* BASIC */
 
 a {
@@ -36,98 +200,84 @@ p, h2, h1 {
 /* Header Section */
 
 header {
-	background: rgba(255, 255, 255, 0.95);
-	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
-	padding: 0.8em 1em 0.5em 1em;
-	position: absolute;
-	text-align: center;
-	width: 100%;
-	top: 0;
-	z-index: 10000;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.1);
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10000;
 }
 
 header h1{
-	margin: 0;
-	font-weight: 700;
-	font-family: 'Oswald', sans-serif;
-	font-size: 1.4em;
-	letter-spacing: 0.05em;
-	display: inline-block;
+  font-weight: 500;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5em;
+  letter-spacing: 0.04em;
 }
 
 #logo {
-	margin: auto;
+  margin: auto;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.2em;
 }
 
 #logo a:hover{
-	color: #DE5B49;
+  color: #DE5B49;
 }
 
 header nav {
-	margin: 0.5em 0;
-	display: block;
-	font-weight: 300;
-	font-family: 'Oswald', sans-serif;
-  letter-spacing: 0.03em;
-	font-size: 1em;
+  font-weight: 300;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.05em;
+  font-size: 1.1em;
+  float:right;
+  margin-top: 0.35em;
 }
 
 header ul{
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li{
-	display: inline-block;
-	margin: auto 1em;
+  display: inline-block;
+  margin-left: 2em;
 }
 
 nav a:hover {
-	opacity: 0.5;
+  opacity: 0.5;
 }
 
-@media screen and (min-width: 50em) {
-	header {
-		position: fixed;
-		width: 100%;
-		padding: 0.8em 1.5em;
-		top: 0;
-		text-align: left;
-	}
 
-	#logo {
-		margin-left: 16em;
-	}
-
-	header nav {
-		margin: 0;
-		position: absolute;
-		right: 21em;
-		font-size: 1.02em;
-		top: 1.1em;
-	}
-
-	nav ul li{
-		display: inline-block;
-		margin: auto 1em;
-}
-
+@media screen and (max-width: 64em) {
+  header .row{
+    text-align: center;
+  }
+  header nav{
+    float: none;
+    margin-top: 1em;
+  }
+  header nav ul li {
+    margin: 0 1em;
+  }
 }
 
 /* Banner Section */
 
 #intro{
+  background-size: auto;
+  padding-bottom: 3.5em;
+  padding-top: 1em;
 	background-color: #DE5B49;
-	background-size: auto;
-	padding-bottom: 2.5em;
-	padding-top: 1.2em;
-  margin-top: -0.4em;
   font-family: 'Oswald', sans-serif;
 }
 
 #intro h1{
 	font-weight: 700;
-	font-size: 2em;
+	font-size: 3.5em;
 	color: white;
 	width: 90%;
 	margin: 0.5em auto 0.5em auto;
@@ -136,14 +286,14 @@ nav a:hover {
 #intro p{
 	width: 60%;
   letter-spacing: 0.04em;
-	font-size: 1em;
+	font-size: 1.5em;
 	font-weight: 300;
 	color: white;
 	margin: auto;
 }
 
 .icons {
-  margin: 2.5em 0 0 0;
+  margin: 3em 0 0 0;
 }
 
 .icons svg{
@@ -159,31 +309,28 @@ nav a:hover {
   height: 24px;
 }
 
-@media screen and (max-width: 50em) {
+@media screen and (max-width: 64em) {
   #banner {
-    margin-top: 4em;
+    margin-top: 5em;
   }
+
+  #intro {
+    padding-bottom: 2.5em;
+  }
+  #intro h1{
+    font-size: 2em;
+  }
+
+  #intro p{
+    font-size: 1em;
+  }
+
+  .icons {
+      margin: 2.5em 0 0 0;
+  }
+
 }
-@media screen and (min-width: 50em) {
 
-	#intro{
-		background-size: auto;
-		padding-bottom: 3.5em;
-		padding-top: 2em;
-	}
-
-	#intro h1 {
-		font-size: 3.5em;
-	}
-
-	#intro p{
-		font-size: 1.5em;
-	}
-
-	.icons {
-  		margin: 3em 0 0 0;
-	}
-}
 
 /* About me Section */
 
@@ -214,34 +361,56 @@ nav a:hover {
   font-family: 'Roboto', sans-serif;
   font-size: 1.1em;
   font-weight: 300;
-  width: 75%;
+  width: 65%;
   margin: auto;
   line-height: 1.8em;
   padding-bottom: 3em;
 }
 
-@media screen and (max-width: 50em) {
+@media screen and (max-width: 64em) {
   #about p{
     font-size: 1em;
-    width: 90%;
+    width: 80%;
   }
 }
 
 /* portfolio section */
 
 #work {
-	margin-bottom: 4em;
+	margin-bottom: 2em;
 }
 
 #work h1{
 	padding-top: 2em;
 	margin-top: 0;
 }
+.preview {
+  margin-top: 2em;
+}
+
+.preview img:hover{
+  opacity: 0.8;
+  filter: alpha(opacity=40)
+}
+.thumbnail {
+  margin-bottom: 3%;
+  float: left;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+}
+
+
+@media screen and (min-width: 28em){
+  .large-4 {
+  width: 50%;
+  }
+}
 
 @media screen and (min-width: 50em) {
-  #work h1{
-    padding-top: 2em;
+  .large-4 {
+    width: 33.33333%;
   }
+
 }
 
 /* Resume section */
@@ -249,11 +418,13 @@ nav a:hover {
 #resume {
 	background: #F1F1F1;
 	font-family: 'Roboto', sans-serif;
+  padding-bottom: 2em;
 }
 
 #resume h1{
 	padding-top: 2em;
 	margin-bottom: 0.3em;
+  margin-top: 0;
 }
 
 #resume ul li {
@@ -274,10 +445,12 @@ nav a:hover {
 	padding-bottom: 2em;
 }
 
-.experience [class*="row"] {
-  border-bottom: dotted 1px #ccc;
+#ibm, #turolight, #chinno{
+  clear: both;
+}
+
+#ibm {
   padding-top: 1em;
-  padding-bottom: 1em;
 }
 
 .experience h2 {
@@ -301,10 +474,6 @@ nav a:hover {
   margin-bottom: 0;
   margin-top: 0.6em;
   font-size: 1.2em;
-}
-
-.experience [class*="row"]:last-of-type {
-  border: none;
 }
 
 .experience ul {
@@ -341,6 +510,8 @@ nav a:hover {
   background-color: #fff;
   margin-bottom: 0;
   padding-top: 0.3em;
+  padding-left: 4%;
+  padding-right: 4%;
 }
 
 #contact h1{
@@ -351,8 +522,8 @@ nav a:hover {
 }
 
 #contact p{
-  font-family: 'Lato', sans-serif;
-  font-size: 1.2em;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1em;
   font-weight: 300;
   color: #949494;
 }
@@ -482,7 +653,7 @@ nav a:hover {
 /* Footer Section */
 
 footer {
-	padding: 2em 0.5em;
+	padding: 1.5em 0.5em;
 	background: #504E59;
 	color: white;
 	font-family: 'Roboto', sans-serif;
