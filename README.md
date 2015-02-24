@@ -1,3 +1,3 @@
 cynthiaz.github.io
 ==================
-Hi, this is my portfolio site. Feel free to peek around.
+Hi, this is my portfolio site. It's currently under construction... 
