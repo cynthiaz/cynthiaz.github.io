@@ -1,0 +1,258 @@
+/* common class selector */
+
+#logo {
+  vertical-align: sub;
+  margin-right: 10px;
+}
+.workname {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #E06B2D;
+  margin-top: 0.8em;
+  margin-bottom: 0.3em;
+  letter-spacing: 0.02em;
+}
+
+.tagline {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.7em;
+  color: #535353;
+  font-weight: 500;
+  margin-bottom: 0;
+  margin-top: 0;
+  line-height: 1.3em;
+  width: 70%;
+}
+
+.short_intro {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 0.9em;
+  margin-top: 1em;
+  color: #535353;
+  line-height: 1.5em;
+  width: 85%;
+}
+
+.description {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  margin-top: 0.5em;
+}
+
+.processtitle {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.4em;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+
+}
+
+.processtitle.gc{
+  color: #4178BE;
+}
+
+.processtitle.consistency{
+  color: #8cc63f;
+}
+
+.processtitle.relm{
+  color: #35AFD8;
+}
+
+.processtitle.language{
+  color: #00a59f;
+}
+
+.button.transparent.view,
+input.transparent.button.view {
+    border: 2px solid rgba(224,107,41,1);
+    color: rgba(224,107,41,1) !important;
+}
+
+.button.transparent.view:hover,
+input.button.transparent.view:hover {
+    border: 2px solid rgba(224,107,41,1);
+    background-color: rgba(224,107,41,1);
+    color: #fff !important;
+}
+
+.button.transparent.white-transparent,
+input.transparent.button.white-transparent{
+    border: 2px solid rgba(255,255,255,1);
+    color: rgba(255,255,255,1) !important;
+}
+
+.button.transparent.white-transparent:hover,
+input.button.transparent.white-transparent:hover {
+    border: 2px solid rgba(255,255,255,1);
+    background-color: rgba(255,255,255,1);
+    color: #00B4A0 !important;
+    font-weight: bold;
+}
+
+.button.transparent.download,
+input.transparent.button.download {
+    border: 2px solid rgba(0,165,159,1);
+    color: rgba(0,165,159,1) !important;
+}
+
+.button.transparent.download:hover,
+input.button.transparent.download:hover {
+    border: 2px solid rgba(0,165,159,1);
+    background-color: rgba(0,165,159,1);
+    color: #fff !important;
+}
+/* Grid */
+.row:before,
+.row:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.row:after {
+    clear: both;
+}
+
+.row {
+  clear: both;
+  
+}
+
+.grid-2, {
+  float: left;
+  width:100%;
+  padding: 0 1%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 40em) {
+  .grid-1 { width: 16.6666666%; }
+  .grid-2 { width: 32%;}
+  .grid-2-4 { width: 24%; }
+  .grid-3 { width: 50%; }
+  .grid-4 { width: 66.6666666%; }
+  .grid-5 { width: 83.3333333%; }
+  .grid-6 { width: 100%; }
+
+
+}
+
+
+/* Pocket Thrift */
+
+/* Brief */
+#brief {
+  padding-bottom: 1em;
+}
+/* Ideation section */
+#sketch img{
+  display: block;
+  margin: auto;
+  width:125%;
+}
+
+/* Wireframe section */
+#wireframe {
+  padding-bottom: 2em;
+}
+
+/* UI Screen section */
+.showcase {
+    padding-bottom: 2em;
+}
+
+.showcase .screens{
+  margin-bottom: 0.5em;
+}
+.showcase a{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  color: #DE5B49;
+  display: inline-block;
+  margin-bottom: 1em;
+}
+
+.row img{
+  display: inline-block;
+}
+
+/*Dialogue */
+.trends {
+  text-align: center;
+  margin-top: 1em;
+  vertical-align:top;
+}
+.trends img{
+    height: 90px;
+    display: inline;
+}
+
+@media screen and (min-width: 40em) {
+  .trends {
+    display: inline-block;
+  }
+}
+
+  /* Observations section */
+.observations {
+  padding-top: 1em;
+}
+
+.observations img{
+  display: inline-block;
+}
+
+.observations .grid-2-4 {
+  display: inline-block;
+  vertical-align:top;
+}
+
+.scenarios {
+  display: block;
+  margin: auto;
+  margin-top: 1em;
+  max-width: 100%;
+}
+
+/* Design Specifications section */
+.specifications {
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+}
+
+/* Ideation section */
+.ideation {
+  padding-top: 1em;
+}
+.ideation img{
+  display: block;
+  margin: auto;
+  width:125%;
+}
+
+/* modeling */
+.prototyping img{
+  display: block;
+  margin: auto;
+}
+
+/* Kettle */
+
+.my-carousel {
+  background: #f6f6f6;
+  padding-bottom: 2em;
+  padding-top: 5em;
+}
+
+
+@media screen and (min-width: 40em) {
+  .my-carousel {
+    padding-top: 0;
+  }
+
+}

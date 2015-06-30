@@ -557,11 +557,14 @@ nav ul.sub-menu > li:last-child > a {
     Intro
 ----------------------------------------------------------------*/
 
+.fill-bg {
+    background-color: #D95947;
+}
+
 #intro-wrap {
     position: relative;
     width: 100%;
     height: 33.333em;
-    background-color: #D95947;
 }
 
 #intro {
@@ -610,7 +613,6 @@ nav ul.sub-menu > li:last-child > a {
 
 #intro .intro-mockup img {
     margin: 0 auto;
-    max-width: 40em;
 }
 
 #intro .intro-mockup.intro-left img,
@@ -732,6 +734,10 @@ nav ul.sub-menu > li:last-child > a {
     Blog & Portfolio
 ----------------------------------------------------------------*/
 
+.work-title {
+    font-weight: 300;
+}
+
 .single #post-nav ul {
     padding: 1em 0;
     border-bottom: 1px solid #ddd;
@@ -783,7 +789,8 @@ nav ul.sub-menu > li:last-child > a {
 
 .single #post-nav .label {
     text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    vertical-align: middle;
 }
 
 .single #post-nav .label,
@@ -813,7 +820,8 @@ nav ul.sub-menu > li:last-child > a {
 .search.list-style .meta-post,
 .search.list-style .meta-post a {
     color: #ccc;
-    font-weight: 400;
+    font-weight: 300;
+    font-size: 0.9em;
 }
 
 .blog .column.six h5,
@@ -906,9 +914,9 @@ nav ul.sub-menu > li:last-child > a {
 .blog-section.masonry-style article.six figure .blog-overlay,
 .blog-section.masonry-style article.eight figure img,
 .blog-section.masonry-style article.eight figure .blog-overlay {
-    -webkit-border-radius: 1em;
-    -moz-border-radius: 1em;
-    border-radius: 1em;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
 }
 
 .blog.masonry-style article.six .blog-excerpt,
@@ -934,9 +942,9 @@ nav ul.sub-menu > li:last-child > a {
 .blog.masonry-style article.four,
 .blog-section.masonry-style article.three,
 .blog-section.masonry-style article.four {
-    -webkit-border-radius: 1em;
-    -moz-border-radius: 1em;
-    border-radius: 1em;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
 }
 
 .blog.masonry-style article.three figure img,
@@ -954,9 +962,9 @@ nav ul.sub-menu > li:last-child > a {
 .blog-section.masonry-style article.three figure .blog-overlay,
 .blog-section.masonry-style article.four figure img,
 .blog-section.masonry-style article.four figure .blog-overlay {
-    -webkit-border-radius: 1em 1em 0 0;
-    -moz-border-radius: 1em 1em 0 0;
-    border-radius: 1em 1em 0 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
 }
 
 .blog.masonry-style article.three .blog-excerpt,
@@ -964,10 +972,10 @@ nav ul.sub-menu > li:last-child > a {
 .blog-section.masonry-style article.three .blog-excerpt,
 .blog-section.masonry-style article.four .blog-excerpt {
     overflow: hidden;
-    padding: 0.556em;
-    -webkit-border-radius: 0 0 1em 1em;
-    -moz-border-radius: 0 0 1em 1em;
-    border-radius: 0 0 1em 1em;
+    padding: 0.556em 0.8em;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
     background-color: #fff;
 }
 
@@ -1016,7 +1024,7 @@ nav ul.sub-menu > li:last-child > a {
     bottom: 0;
     left: 0;
     display: block;
-    background-color: rgba(79,193,233,0.9);
+    background-color: rgba(219,88,66,0.9);
     opacity: 0;
     filter: alpha(opacity=0);    
     -webkit-transition: all 0.35s ease-in-out;
@@ -1105,7 +1113,7 @@ nav ul.sub-menu > li:last-child > a {
 }
 
 .portfolio ul.cats li {
-    margin-right: 1em;
+    margin-right: 1.6em;
     color: #444;
     font-weight: 300;
     font-size: 1em;
@@ -1838,14 +1846,17 @@ hr {
 /*----------------------------------------------------------------
     Timeline
 ----------------------------------------------------------------*/
-
+.timeline-label ul{
+    font-size: 0.9em;
+    width:90%;
+}
 .timeline-label h4 {
     margin-top: 0;
     font-size: 1.5em;
 }
 
 .timeline-label p {
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 .timeline .experience {
@@ -1863,13 +1874,14 @@ hr {
 }
 
 .timeline .experience-info .role {
-    font-size: 0.778em;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
 }
 
 .timeline .experience-info p {
     color: #777;
-    font-size: 0.76em;
+    font-size: 0.84em;
 }
 
 .timeline time {
@@ -1877,7 +1889,7 @@ hr {
     width: 4.111em;
     color: #ccc;
     text-align: center;
-    font-weight: 400;
+    font-weight: 300;
     font-family: 'Oswald', sans-serif;
 }
 
@@ -1919,12 +1931,14 @@ hr {
 }
 
 .timeline .experience-info {
-    margin-left: 2.4em;
+    margin-left: 2em;
     margin-top: 0.6em;
 }
 
-.company {
+#resume .company {
     font-weight: 400;
+    color:#333333;
+    font-size: 1.1em;
 }
 
 /*----------------------------------------------------------------
@@ -2434,15 +2448,16 @@ input.button {
     border-bottom: none;
     -webkit-border-radius: 0.333em;
     -moz-border-radius: 0.333em;
-    border-radius: 0.333em;
+    border-radius: 0;
     background-color: rgba(84,87,102,1);
     color: #FFFFFF !important;
     text-decoration: none !important;
     text-transform: uppercase;
     font-size: 0.778em !important;
-    font-family: 'Montserrat', sans-serif !important;
+    font-family: 'Roboto', sans-serif !important;
     line-height: 1.714em !important;
     cursor: pointer;
+    font-weight: bold;
 }    
 
 .csstransitions .button,
@@ -2673,14 +2688,14 @@ input.button.transparent.mint:hover {
 
 .button.transparent.aqua,
 input.transparent.button.aqua {
-    border: 2px solid rgba(85,193,231,1);
-    color: rgba(85,193,231,1) !important;
+    border: 1px solid rgba(219,87,65,1);
+    color: rgba(219,87,65,1) !important;
 }
 
 .button.transparent.aqua:hover,
 input.button.transparent.aqua:hover {
-    border: 2px solid rgba(85,193,231,1);
-    background-color: rgba(85,193,231,1);
+    border: 1px solid rgba(219,87,65,1);
+    background-color: rgba(219,87,65,1);
     color: #fff !important;
 }
 
